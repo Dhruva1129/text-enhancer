@@ -30,7 +30,7 @@ const ImageToTextEnhancer = () => {
 
         try {
             setLoading(true);
-            const response = await axios.post("http://127.0.0.1:8000/image/image-to-enhanced-text", formData, {
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/image/image-to-enhanced-text`, formData, {
                 headers: { "Content-Type": "multipart/form-data" }
             });
 
