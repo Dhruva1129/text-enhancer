@@ -1,0 +1,116 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    /* background-color: #333; */
+    padding: 10px 0;
+    /* left: 183px; */
+    border-radius: 10px;
+  }
+  
+  /* Inner Container (Fixed width & Centered) */
+  .navbar-container {
+    width: 80%; /* 80% width */
+    max-width: 1200px; /* Prevents stretching on large screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #697565;  */
+    border-radius: 50px;
+    padding: 10px 50px; /* Padding for inner spacing */
+    background: rgb(255 255 255 / 9%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+  }
+  
+  /* Logo */
+  .logo {
+    color: rgb(236, 223, 204);
+    font-size: 24px;
+    margin : 0;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: rgb(236, 223, 204);
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(105, 117, 101);
+  }
+  
+  /* Hamburger Menu */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: rgb(236, 223, 204);
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        /* background-color: #333; */
+        padding: 10px 0;
+        left: 190px;
+        border-radius: 50px;
+    }
+    .navbar-container {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 15px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 10%;
+      background-color: #444;
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      border-radius: 5px;
+      gap: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .nav-links li a {
+      display: block;
+      padding: 8px;
+    }
+  }
+  

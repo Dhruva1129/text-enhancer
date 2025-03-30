@@ -1,0 +1,94 @@
+.image-enhancer-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    height: 70vh;
+  }
+  h2{
+    color: white;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  
+  .tone-select-group {
+    display: flex;
+    /* flex-direction: column; */
+    margin-bottom: 20px;
+    align-items: baseline;
+  }
+  
+  .tone-select {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .image-preview-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-preview {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #155d8b;
+  }
+  
+  .text-section {
+    margin-top: 20px;
+  }
+  
+  .extracted-text,
+  .enhanced-text {
+    background-color: transparent;
+    padding: 15px;
+    white-space: pre-wrap;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .image-preview {
+      max-height: 200px;
+    }
+    h2{
+      font-size: 24px;
+    }
+  
+    .action-button {
+      width: 100%;
+    }
+    .tone-select-group{
+      flex-direction: column;
+    }
+  }
+  
