@@ -105,7 +105,7 @@ const TextEnhancer = () => {
 
         try {
             setLoadingEnhance(true);
-            const response = await axios.post("http://127.0.0.1:8000/enhance", { text, tone });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/enhance`, { text, tone });
 
             if (response.data?.enhanced_text) {
                 setEnhancedText(response.data.enhanced_text);
@@ -128,7 +128,7 @@ const TextEnhancer = () => {
 
         try {
             setLoadingTranslate(true);
-            const response = await axios.post("http://127.0.0.1:8000/translate", {
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/translate`, {
                 text: enhancedText,
                 language: selectedLanguage
             });
