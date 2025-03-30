@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+google-generativeai
+pydantic
+sqlalchemy
+psycopg2-binary
+mysql-connector-python
+python-multipart
+gtts
+googletrans==4.0.0-rc1
+deep_translator
+Flask
+SpeechRecognition
+pydub
+requests
+google-cloud-vision
+python-dotenv
