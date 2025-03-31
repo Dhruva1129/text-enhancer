@@ -1,7 +1,7 @@
 .container {
     height: auto;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 20px;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
@@ -93,7 +93,7 @@
     .container {
       height: auto;
       padding: 15px;
-      margin-top: 30px;
+      margin-top: 15px;
     }
   
     textarea {
