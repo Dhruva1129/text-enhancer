@@ -3,6 +3,8 @@ import axios from "axios";
 import "./ImageToTextEnhancer.css"; // <-- Import the CSS file
 import { useNavigate } from "react-router-dom";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const ImageToTextEnhancer = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [extractedText, setExtractedText] = useState("");
@@ -30,7 +32,7 @@ const ImageToTextEnhancer = () => {
 
         try {
             setLoading(true);
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/image/image-to-enhanced-text`, formData, {
+            const response = await axios.post(`${API_URL}/image/image-to-enhanced-text`, formData, {
                 headers: { "Content-Type": "multipart/form-data" }
             });
 
