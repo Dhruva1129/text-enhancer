@@ -13,17 +13,18 @@
   
   /* Title */
   .home-container h1 {
-    font-size: 55px;
+    font-size: 30px;
     color: white;
     margin-bottom: 10px;
   }
   .home-container h2 {
-    font-size: 28px;
+    font-size: 22px;
     color: white;
     margin-bottom: 10px;
+    text-align: center;
   }
   .home-container h4 {
-    font-size: 24px;
+    font-size: 15px;
     color: white;
     margin-bottom: 0px;
   }
@@ -51,7 +52,7 @@
   /* Buttons */
   .home-container button {
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 15px;
     /* border: none; */
     cursor: pointer;
     border-radius: 50px;
@@ -85,13 +86,14 @@
       font-size: 12px;
     }
     .home-container h1 {
-      font-size: 35px;
+      font-size: 25px;
     }
     .home-container h2 {
-      font-size: 23px;
+      font-size: 19px;
+      text-align: center;
     }
     .home-container h4 {
-      font-size: 12px;
+      font-size: 10px;
     }
   
     .home-container .home-para {
@@ -115,7 +117,7 @@
   }
   
   .about-section .about-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: white !important;
@@ -126,7 +128,7 @@
   }
   
   .about-section .about-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 40px !important;
     margin-bottom: 40px !important;
     max-width: 800px;
@@ -154,20 +156,20 @@
   }
   
   .about-section .about-card h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: #ECDFCC !important;
     text-align: center;
   }
   
   .about-section .about-card p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   .about-section .about-footer {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 800px;
     margin: auto;
   }
@@ -191,11 +193,11 @@
     padding: 50px 20px;
     /* background: linear-gradient(to right, #6a11cb, #2575fc); */
     color: #fff;
-    margin: 0 300px 0 300px;
+    margin: 0 150px 0 150px;
   }
   
   .features-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -225,18 +227,18 @@
   }
   
   .feature-icon {
-    font-size: 40px;
+    font-size: 30px;
     display: block;
     margin-bottom: 10px;
   }
   
   .feature-card h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
   
   .feature-card p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     opacity: 0.9;
   }
   
