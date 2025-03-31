@@ -12,7 +12,7 @@
   
   /* Inner Container (Fixed width & Centered) */
   .navbar-container {
-    width: 80%; /* 80% width */
+    width: 70%; /* 80% width */
     max-width: 1200px; /* Prevents stretching on large screens */
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
   /* Logo */
   .logo {
     color: rgb(236, 223, 204);
-    font-size: 24px;
+    font-size: 20px;
     margin : 0;
   }
   
@@ -43,7 +43,7 @@
   .nav-links li a {
     text-decoration: none;
     color: rgb(236, 223, 204);
-    font-size: 18px;
+    font-size: 14px;
     transition: 0.3s;
   }
   
@@ -54,7 +54,7 @@
   /* Hamburger Menu */
   .menu-icon {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(236, 223, 204);
     cursor: pointer;
   }
@@ -74,6 +74,7 @@
     }
     .navbar-container {
       padding: 10px 20px; /* Adjust padding for smaller screens */
+      position: relative;
     }
 
     .logo{
