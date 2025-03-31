@@ -1,6 +1,6 @@
 .image-enhancer-container {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 20px;
     font-family: 'Segoe UI', sans-serif;
     height: 70vh;
@@ -52,14 +52,14 @@
     background-color: transparent;
     color: white;
     font-weight: bold;
-    border: none;
+    border: 1px solid #ffffff;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s;
   }
   
   .action-button:hover {
-    background-color: #155d8b;
+    background-color: rgb(105, 117, 101);
   }
   
   .text-section {
