@@ -31,10 +31,15 @@ model = genai.GenerativeModel("gemini-1.5-pro-latest")
 # Initialize FastAPI
 app = FastAPI()
 
+origins = [
+    "https://text-enhancer-qk08q0rx5-dhruva1129s-projects.vercel.app/",  # Your Vercel frontend URL
+    "http://localhost:5173",  # For local development
+]
+
 # Enable CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["text-enhancer-one.vercel.app"],  # Update if different frontend URL
+    allow_origins=origins,  # Update if different frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
