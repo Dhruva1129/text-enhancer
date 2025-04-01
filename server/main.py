@@ -32,7 +32,7 @@ model = genai.GenerativeModel("gemini-1.5-pro-latest")
 app = FastAPI()
 
 origins = [
-    "https://text-enhancer-qk08q0rx5-dhruva1129s-projects.vercel.app/",  # Your Vercel frontend URL
+    "https://text-enhancer-qk08q0rx5-dhruva1129s-projects.vercel.app",  # Your Vercel frontend URL
     "http://localhost:5173",  # For local development
 ]
 
