@@ -1,0 +1,75 @@
+.summarizer-container {
+    max-width: 700px;
+    margin: 90px auto;
+    padding: 2rem;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summarizer-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .summarizer-textarea {
+    width: 95%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summarizer-file-input {
+    display: block;
+    margin: 0.8rem 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .summarizer-button {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .summarizer-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .summarizer-output {
+    margin-top: 2rem;
+    background: #3b3b3b;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .summarizer-output h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .summarizer-output p {
+    white-space: pre-wrap;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .summarizer-container {
+      margin: 30px auto;
+    }
+    .summarizer-textarea {
+        width: 86%;
+    }
+    .summarizer-file-input{
+        font-size: 12px;
+    }
+  }
+  
