@@ -50,6 +50,7 @@ const Home = () => {
         <div className="button-container">
           <button onClick={() => navigate("/text-enhancer")}>Enhance Text</button>
           <button onClick={() => navigate("/image-to-text-enhancer")}>Image to Text Enhance</button>
+          <button onClick={() => navigate("/summarizer")}>Summarizer</button>
         </div>
       </div>
 
