@@ -10,13 +10,18 @@ from dotenv import load_dotenv
 
 # Import image enhancement router
 from image_enha import router as image_enhancer_router
+from summarizer import router as summarizer_router
 
 # Load environment variables from .env
 load_dotenv()
 
 # Get API keys from .env
 OCR_SPACE_API_KEY = os.getenv("OCR_SPACE_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY").strip('"')
+
+print("Loaded API Key:", GOOGLE_API_KEY)
+print("Loaded API Key:", OCR_SPACE_API_KEY)
+
 
 # Validate API keys
 if not OCR_SPACE_API_KEY:
@@ -31,15 +36,10 @@ model = genai.GenerativeModel("gemini-1.5-pro-latest")
 # Initialize FastAPI
 app = FastAPI()
 
-origins = [
-    "https://text-enhancer-qk08q0rx5-dhruva1129s-projects.vercel.app",  # Your Vercel frontend URL
-    "http://localhost:5173",  # For local development
-]
-
 # Enable CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Update if different frontend URL
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],  # Allow both localhost and 127.0.0.1
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -47,6 +47,8 @@ app.add_middleware(
 
 # Include image enhancement router
 app.include_router(image_enhancer_router, prefix="/image")
+# Include summarizer router
+app.include_router(summarizer_router, prefix="/summarizer")
 
 # Define request models
 class TextEnhancementRequest(BaseModel):
@@ -321,9 +323,6 @@ def home():
 #         return response
 #     except Exception as e:
 #         raise HTTPException(status_code=500, detail=str(e))
-
-
-# print(f"Google API Key Loaded: {GOOGLE_API_KEY[:5]}******")
 
 
 
