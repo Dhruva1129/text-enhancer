@@ -15,3 +15,5 @@ pydub
 requests
 google-cloud-vision
 python-dotenv
+python-docx
+PyMuPDF
