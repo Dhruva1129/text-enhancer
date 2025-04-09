@@ -39,7 +39,7 @@ app = FastAPI()
 # Enable CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://text-enhancer-git-main-dhruva1129s-projects.vercel.app"],  # Allow both localhost and 127.0.0.1
+    allow_origins=["https://text-enhancer-ten.vercel.app"],  # Allow both localhost and 127.0.0.1
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
